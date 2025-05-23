@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #161616;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background: #222;
+  padding: 1em;
+  text-align: center;
+}
+header h1 {
+  margin: 0.2em 0;
+  color: #f6c900;
+  letter-spacing: 2px;
+}
+main {
+  max-width: 700px;
+  margin: 2em auto;
+  background: #252525;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0008;
+}
+section {
+  margin-bottom: 2em;
+}
+label {
+  margin-right: 1.5em;
+}
+input[type="url"], button {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.3em 0;
+  border-radius: 6px;
+  border: none;
+}
+button {
+  background: #f6c900;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #666 !important;
+  cursor: not-allowed;
+}
+#effects-section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em 2em;
+  margin-bottom: 1em;
+}
+#processing {
+  display: none;
+  color: #f6c900;
+  font-weight: bold;
+  margin-top: 1em;
+}
+#output-section {
+  text-align: center;
+}
+#download-link {
+  display: inline-block;
+  margin: 1em auto;
+  background: #f6c900;
+  color: #222;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#download-link:hover {
+  background: #ffe36e;
+}
+video {
+  margin: 1em 0;
+  background: #000;
+  border-radius: 8px;
+}

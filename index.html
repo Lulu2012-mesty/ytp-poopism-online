@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi Poopism Video Editor Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>YTPMV/Poopism Video Editor Online</h1>
+    <p>Apply meme/poopism effects to videos, preview, and download!</p>
+  </header>
+  <main>
+    <section id="video-section">
+      <label for="video-url">YouTube or Video Link:</label>
+      <input type="url" id="video-url" placeholder="Paste YouTube/video URL here" />
+      <button id="load-btn">Load Video</button>
+      <video id="input-video" controls preload="metadata" width="480"></video>
+    </section>
+    <section id="effects-section">
+      <h2>Choose Poopisms (Effects)</h2>
+      <form id="effects-form">
+        <label><input type="checkbox" name="poopism" value="reverse"> Reverse Video</label>
+        <label><input type="checkbox" name="poopism" value="fast"> Speed Up (1.5x)</label>
+        <label><input type="checkbox" name="poopism" value="slow"> Slow Down (0.7x)</label>
+        <label><input type="checkbox" name="poopism" value="pitchup"> Pitch Up Audio</label>
+        <label><input type="checkbox" name="poopism" value="pitchdown"> Pitch Down Audio</label>
+        <label><input type="checkbox" name="poopism" value="stutter"> Stutter/Repeat</label>
+        <label><input type="checkbox" name="poopism" value="mirror"> Mirror Video</label>
+      </form>
+      <button id="apply-btn" disabled>Apply Poopisms</button>
+      <div id="processing">Processing... (FFmpeg.js runs in browser, please wait)</div>
+    </section>
+    <section id="output-section">
+      <h2>Output</h2>
+      <video id="output-video" controls width="480"></video>
+      <a id="download-link" download="ytp-output.mp4">Download Edited Video</a>
+    </section>
+  </main>
+  <footer>
+    <small>
+      Powered by <a href="https://github.com/ffmpegwasm/ffmpeg.wasm" target="_blank">ffmpeg.js</a> | 
+      <a href="https://github.com/Lulu2012-mesty/ytp-poopism-online" target="_blank">View source on GitHub</a>
+    </small>
+  </footer>
+  <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/ffmpeg.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
